@@ -3,154 +3,155 @@ This code book is related to the tidy.txt file located on this repository.
 For context information, refer to README.md file of this repository.
 Data structure (variable and observations) is described on the Data section.
 All the work used to transform the data is described on Work section.
+##################################################################################################
 
-# Data
-On the final tidy.txt, each variable is separated by space. There are 81 of them: 79 for measurement and 2 for subject and activity. Each row (180 in total) contains the average of 10299 initial observations/measurements for the mean and standard deviation variables. 
+#Data
+	On the final tidy.txt, each variable is separated by space. There are 81 of them: 79 for measurement and 2 for subject and activity. Each row (180 in total) contains the average of 10299 initial observations/measurements for the mean and standard deviation variables. 
 
-Variables
-Each row contains, for a given subject and activity, 79 averaged signal measurements.
+		Variables
+			Each row contains, for a given subject and activity, 79 averaged signal measurements.
 
-1.	ID
-Subject: integer varying from 1 to 30
-Activity: character string
-WALKING: subject was walking
-WALKING_UPSTAIRS: subject was walking upstairs
-WALKING_DOWNSTAIRS: subject was walking downstairs
-SITTING: subject was sitting
-STANDING: subject was standing
-LAYING: subject was laying
+				1.	ID
+					Subject: integer varying from 1 to 30
+					Activity: character string
+					WALKING: subject was walking
+					WALKING_UPSTAIRS: subject was walking upstairs
+					WALKING_DOWNSTAIRS: subject was walking downstairs
+					SITTING: subject was sitting
+					STANDING: subject was standing
+					LAYING: subject was laying
 
-2.	Average of measurements
-The measurements are classified in two domains:
-Time-domain signals.
-Frequency-domain signals. 
+			2.	Average of measurements
+					The measurements are classified in two domains:
+						Time-domain signals.
+						Frequency-domain signals. 
 
-Time-domain signals
-Average time-domain body acceleration in the X, Y and Z directions:
-tBodyAccmeanX               
- 	tBodyAccmeanY
-               tBodyAccmeanZ
-Standard deviation of the time-domain body acceleration in the X, Y and Z directions:
-tBodyAccstdX
-tBodyAccstdY
-tBodyAccstdZ
-Average time-domain gravity acceleration in the X, Y and Z directions:
-tGravityAccmeanX
-tGravityAccmeanY
-tGravityAccmeanZ
-Standard deviation of the time-domain gravity acceleration in the X, Y and Z directions:
-tGravityAccstdX
-tGravityAccstdY
-tGravityAccstdZ
-Average time-domain body acceleration jerk (derivation of the acceleration in time) in the X, Y and Z directions:
-tBodyAccJerkmeanX           
-tBodyAccJerkmeanY
-tBodyAccJerkmeanZ
-Standard deviation of the time-domain body acceleration jerk (derivation of the acceleration in time) in the X, Y and Z directions:
-tBodyAccJerkstdX            
-tBodyAccJerkstdY
-tBodyAccJerkstdZ
-Average time-domain body angular velocity in the X, Y and Z directions:
-tBodyGyromeanX
-tBodyGyromeanY
-tBodyGyromeanZ
-Standard deviation of the time-domain body angular velocity in the X, Y and Z directions:
-tBodyGyrostdX           
-tBodyGyrostdY
-tBodyGyrostdZ
-Average time-domain body angular velocity jerk (derivation of the angular velocity in time) in the X, Y and Z directions:
-tBodyGyroJerkmeanX 
-tBodyGyroJerkmeanY
-tBodyGyroJerkmeanZ
-Standard deviation of the time-domain body angular velocity jerk (derivation of the angular velocity in time) in the X, Y and Z directions:
-tBodyGyroJerkstdX           
-tBodyGyroJerkstdY
-tBodyGyroJerkstdZ
-Average and standard deviation of the time-domain magnitude of body acceleration:
-tBodyAccMagmean           
-tBodyAccMagstd
-Average and standard deviation of the time-domain magnitude of gravity acceleration:
-tGravityAccMagmean
-tGravityAccMagstd
-Average and standard deviation of the time-domain magnitude of body acceleration jerk (derivation of the acceleration in time):
-tBodyAccJerkMagmean
-tBodyAccJerkMagstd
-Average and standard deviation of the time-domain magnitude of body angular velocity:
-tBodyGyroMagmean         
-tBodyGyroMagstd
-Average and standard deviation of the time-domain magnitude of body angular velocity jerk (derivation of the angular velocity in time):
-tBodyGyroJerkMagmean
-tBodyGyroJerkMagstd
+					Time-domain signals
+						Average time-domain body acceleration in the X, Y and Z directions:
+							tBodyAccmeanX               
+ 							tBodyAccmeanY
+              tBodyAccmeanZ
+						Standard deviation of the time-domain body acceleration in the X, Y and Z directions:
+							tBodyAccstdX
+							tBodyAccstdY
+							tBodyAccstdZ
+						Average time-domain gravity acceleration in the X, Y and Z directions:
+							tGravityAccmeanX
+							tGravityAccmeanY
+							tGravityAccmeanZ
+						Standard deviation of the time-domain gravity acceleration in the X, Y and Z directions:
+							tGravityAccstdX
+							tGravityAccstdY
+							tGravityAccstdZ
+						Average time-domain body acceleration jerk (derivation of the acceleration in time) in the X, Y and Z directions:
+							tBodyAccJerkmeanX           
+							tBodyAccJerkmeanY
+							tBodyAccJerkmeanZ
+						Standard deviation of the time-domain body acceleration jerk (derivation of the acceleration in time) in the X, Y and Z directions:
+							tBodyAccJerkstdX            
+							tBodyAccJerkstdY
+							tBodyAccJerkstdZ
+						Average time-domain body angular velocity in the X, Y and Z directions:
+							tBodyGyromeanX
+							tBodyGyromeanY
+							tBodyGyromeanZ
+						Standard deviation of the time-domain body angular velocity in the X, Y and Z directions:
+							tBodyGyrostdX           
+							tBodyGyrostdY
+							tBodyGyrostdZ
+						Average time-domain body angular velocity jerk (derivation of the angular velocity in time) in the X, Y and Z directions:
+							tBodyGyroJerkmeanX 
+							tBodyGyroJerkmeanY
+							tBodyGyroJerkmeanZ
+						Standard deviation of the time-domain body angular velocity jerk (derivation of the angular velocity in time) in the X, Y and Z directions:
+							tBodyGyroJerkstdX           
+							tBodyGyroJerkstdY
+							tBodyGyroJerkstdZ
+						Average and standard deviation of the time-domain magnitude of body acceleration:
+							tBodyAccMagmean           
+							tBodyAccMagstd
+						Average and standard deviation of the time-domain magnitude of gravity acceleration:
+							tGravityAccMagmean
+							tGravityAccMagstd
+						Average and standard deviation of the time-domain magnitude of body acceleration jerk (derivation of the acceleration in time):
+							tBodyAccJerkMagmean
+							tBodyAccJerkMagstd
+						Average and standard deviation of the time-domain magnitude of body angular velocity:
+							tBodyGyroMagmean         
+							tBodyGyroMagstd
+						Average and standard deviation of the time-domain magnitude of body angular velocity jerk (derivation of the angular velocity in time):
+							tBodyGyroJerkMagmean
+							tBodyGyroJerkMagstd
 
-Frequency-domain signals. 
-Average frequency-domain body acceleration in the X, Y and Z directions:
-fBodyAccmeanX
-fBodyAccmeanY
-fBodyAccmeanZ
-Standard deviation of the frequency-domain body acceleration in the X, Y and Z directions:
-         	 fBodyAccstdX
-fBodyAccstdY
-fBodyAccstdZ
-Weighted average of the frequency components of the frequency-domain body acceleration in the X, Y and Z directions:
-fBodyAccmeanFreqX
-fBodyAccmeanFreqY
-fBodyAccmeanFreqZ
-Average frequency-domain body acceleration jerk (derivation of the acceleration in time) in the X, Y and Z directions:
-fBodyAccJerkmeanX
-fBodyAccJerkmeanY
-fBodyAccJerkmeanZ
-Standard deviation of the frequency-domain body acceleration jerk (derivation of the acceleration in time) in the X, Y and Z directions:
-         	fBodyAccJerkstdX
-fBodyAccJerkstdY
-fBodyAccJerkstdZ
-Weighted average of the frequency components of the frequency-domain body acceleration jerk (derivation of the acceleration in time) in the X, Y and Z directions:
-fBodyAccJerkmeanFreqX
-fBodyAccJerkmeanFreqY
-fBodyAccJerkmeanFreqZ
-Average frequency-domain body angular velocity in the X, Y and Z directions:
-  	fBodyGyromeanX
-fBodyGyromeanY
-fBodyGyromeanZ
-Standard deviation of the frequency-domain body angular velocity in the X, Y and Z directions:
-fBodyGyrostdX
-fBodyGyrostdY
-fBodyGyrostdZ               
-Weighted average of the frequency components of the frequency-domain body angular velocity in the X, Y and Z directions:
-fBodyGyromeanFreqX
-fBodyGyromeanFreqY
-fBodyGyromeanFreqZ
-Average, standard deviation, and weighted average of the frequency components of the frequency-domain magnitude of body acceleration:
-fBodyAccMagmean
-fBodyAccMagstd
-fBodyAccMagmeanFreq
-Average, standard deviation, and weighted average of the frequency components of the frequency-domain magnitude of body acceleration jerk (derivation of the acceleration in time):
-fBodyBodyAccJerkMagmean
-fBodyBodyAccJerkMagstd
-fBodyBodyAccJerkMagmeanFreq
-Average, standard deviation, and weighted average of the frequency components of the frequency-domain magnitude of body angular velocity:
-fBodyBodyGyroMagmean
-fBodyBodyGyroMagstd
-fBodyBodyGyroMagmeanFreq
-Average, standard deviation, and weighted average of the frequency components of the frequency-domain magnitude of body angular velocity jerk (derivation of the angular velocity in time):
-fBodyBodyGyroJerkMagmean
-fBodyBodyGyroJerkMagstd
-fBodyBodyGyroJerkMagmeanFreq
+					Frequency-domain signals 
+						Average frequency-domain body acceleration in the X, Y and Z directions:
+							fBodyAccmeanX
+							fBodyAccmeanY
+							fBodyAccmeanZ
+						Standard deviation of the frequency-domain body acceleration in the X, Y and Z directions:
+							fBodyAccstdX
+              fBodyAccstdY
+							fBodyAccstdZ
+						Weighted average of the frequency components of the frequency-domain body acceleration in the X, Y and Z directions:
+							fBodyAccmeanFreqX
+							fBodyAccmeanFreqY
+							fBodyAccmeanFreqZ
+						Average frequency-domain body acceleration jerk (derivation of the acceleration in time) in the X, Y and Z directions:
+							fBodyAccJerkmeanX
+							fBodyAccJerkmeanY
+							fBodyAccJerkmeanZ
+						Standard deviation of the frequency-domain body acceleration jerk (derivation of the acceleration in time) in the X, Y and Z directions:
+							fBodyAccJerkstdX
+							fBodyAccJerkstdY
+							fBodyAccJerkstdZ
+						Weighted average of the frequency components of the frequency-domain body acceleration jerk (derivation of the acceleration in time) in the X, Y and Z directions:
+							fBodyAccJerkmeanFreqX
+							fBodyAccJerkmeanFreqY
+							fBodyAccJerkmeanFreqZ
+						Average frequency-domain body angular velocity in the X, Y and Z directions:
+							fBodyGyromeanX
+							fBodyGyromeanY
+							fBodyGyromeanZ
+						Standard deviation of the frequency-domain body angular velocity in the X, Y and Z directions:
+							fBodyGyrostdX
+						  fBodyGyrostdY
+							fBodyGyrostdZ               
+						Weighted average of the frequency components of the frequency-domain body angular velocity in the X, Y and Z directions:
+							fBodyGyromeanFreqX
+							fBodyGyromeanFreqY
+							fBodyGyromeanFreqZ
+						Average, standard deviation, and weighted average of the frequency components of the frequency-domain magnitude of body acceleration:
+							fBodyAccMagmean
+							fBodyAccMagstd
+							fBodyAccMagmeanFreq
+						Average, standard deviation, and weighted average of the frequency components of the frequency-domain magnitude of body acceleration jerk (derivation of the acceleration in time):
+							fBodyBodyAccJerkMagmean
+							fBodyBodyAccJerkMagstd
+							fBodyBodyAccJerkMagmeanFreq
+						Average, standard deviation, and weighted average of the frequency components of the frequency-domain magnitude of body angular velocity:
+							fBodyBodyGyroMagmean
+							fBodyBodyGyroMagstd
+							fBodyBodyGyroMagmeanFreq
+						Average, standard deviation, and weighted average of the frequency components of the frequency-domain magnitude of body angular velocity jerk (derivation of the angular velocity in time):
+							fBodyBodyGyroJerkMagmean
+							fBodyBodyGyroJerkMagstd
+							fBodyBodyGyroJerkMagmeanFreq
 
-Work
-Experiment (original data):
-https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
-Script (run_analysis.R) step by step: 
-1.	Loading "dplyr" package for managing data frame.
-2.	Downloading the original zip data.
-3.	Unzipping the original (All folders structure automatically installed).
-4.	Reading the subject data, activity data and measurement for test and train data sets.
-5.	Reading the subject and activity IDs.
-6.	Assigning subject and activity variable name.
-7.	Creating a train and test data frame with subject and activity included.
-8.	Merging train and test data set.
-9.	Selecting only mean and standard deviation variables.
-10.	Optimizing variable names by excluding “()” and ”-“ symbols.
-11.	 Grouping the data by subject and activity
-12.	Calculate the mean for every measurement/variable
-13.	Create a tidy data file with 
+#Work
+  Experiment (original data):
+    https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
+  Script (run_analysis.R) step by step: 
+    1.	Loading "dplyr" package for managing data frame.
+    2.	Downloading the original zip data.
+    3.	Unzipping the original (All folders structure automatically installed).
+    4.	Reading the subject data, activity data and measurement for test and train data sets.
+    5.	Reading the subject and activity IDs.
+    6.	Assigning subject and activity variable name.
+    7.	Creating a train and test data frame with subject and activity included.
+    8.	Merging train and test data set.
+    9.	Selecting only mean and standard deviation variables.
+    10.	Optimizing variable names by excluding “()” and ”-“ symbols.
+    11.	 Grouping the data by subject and activity
+    12.	Calculate the mean for every measurement/variable
+    13.	Create a tidy data file with 
 
