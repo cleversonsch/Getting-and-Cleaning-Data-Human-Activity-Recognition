@@ -4,7 +4,7 @@ For context information, refer to README.md file of this repository.
 Data structure (variable and observations) is described on the Data section.
 All the work used to transform the data is described on Work section.
 
-#Data
+# Data
 On the final tidy.txt, each variable is separated by space. There are 81 of them: 79 for measurement and 2 for subject and activity. Each row (180 in total) contains the average of 10299 initial observations/measurements for the mean and standard deviation variables. 
 
 Variables
