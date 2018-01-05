@@ -3,10 +3,10 @@
 The main idea of human activity recognition is to collect information to improve healthcare. However, recognizing common human activities in real life settings is challenging as they may be complex and very different. On top of that, many companies are today offering wearable devices with complex algorithms to collect data.    
 The project here was based on a study, where sensors and Samsung Galaxy S smartphone were used to recognize human activity and collect data. The objective of this project is to get these data, clean it and creating a tidy data set in the end. 
 The following files are in this repository: 
-•	README.md that explains the analysis files how it was created.
-•	CodeBook.md that describes the variables, the data and work performed to clean up the data.
-•	tidy.txt that is the file containing the tidy data set.
-•	run_analysis.R that is the script to get the data, clean it and create a tidy data set. 
+1.	README.md that explains the analysis files how it was created.
+2.	CodeBook.md that describes the variables, the data and work performed to clean up the data.
+3.	tidy.txt that is the file containing the tidy data set.
+4.	run_analysis.R that is the script to get the data, clean it and create a tidy data set. 
 
 # Description of experiment:
 
